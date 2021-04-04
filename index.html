@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Survey</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+    </style>
+</head>
+<body>
+    <main id='main'>
+      
+        <div id='title-header'>
+            <h1 id='title'>Sample Survey Form</h1>
+            <p id='description'>A non-functional survey to demonstrate basic HTML and CSS concepts.</p>
+        </div>
+
+      <form id='survey-form'>
+        <label for="name" id='name-label'>Name:</label>
+        <input type="text" id="name" name="name" placeholder='Enter you name!' required>
+        <br><br>
+        
+        <label for="email" id='email-label'>Email:</label>
+        <input type="email" id="email" name="email" placeholder='Enter your email!' required>
+        <br><br>
+        
+        <label for="age" id='number-label'>Age:</label>
+        <input type="number" id="number" name="age" min='0' max='110' placeholder='Enter age!' required>
+        <br><br>
+        
+        <select id='dropdown'name='favorite' required>
+          <option disabled selected value>Choose your favorite ice cream!</option>
+          <option value='vanilla'>Vanilla</option>
+          <option value='chocolate'>Chocolate</option>
+          <option value='strawberry'>Strawberry</option>
+        </select>
+        <br><br>
+        
+        <p>What is your favorite meal?</p>
+        <label>
+          <input name='favorite-meal' value='breakfast' type='radio'>Breakfast
+        </label>
+        <label>
+          <input name='favorite-meal' value='lunch' type='radio'>Lunch
+        </label>
+        <label>
+          <input name='favorite-meal' value='dinner' type='radio'>Dinner
+        </label> 
+        <br><br>
+        
+        <p>Which kind of food do you prefer?</p>
+        <label>
+          <input name='favorite-type' value='Chinese' type='checkbox'>Chinese
+        </label>
+        <label>
+          <input name='favorite-type' value='Italian' type='checkbox'>Italian
+        </label>
+        <label>
+          <input name='favorite-type' value='Mexican' type='checkbox'>Mexican
+        </label> 
+        <br><br>
+        
+        <p>Any additional food thoughts?</p>
+        <textarea id='comments' name='comments' placeholder='Enter any additional food related opinions here!'></textarea>
+        <br><br>
+        <button type='submit' id="submit">Submit</button>
+      </form>
+
+    </main>
+      
+</body>
+</html>
